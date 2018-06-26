@@ -10,7 +10,7 @@ $('#submitButton').click(function() {
 
 function searchRepositories(input) {
     $.ajax({
-        url: 'https://api.giphy.com/v1/gifs/search',//change
+        url: 'https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc',
         dataType: 'json',
         data: {
             api_key: '2Wmv9FWaICCS6j3Bm0KwdzFh6jiksrhg', //change
