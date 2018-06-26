@@ -10,13 +10,11 @@ $('#submitButton').click(function() {
 
 function searchRepositories(input) {
     $.ajax({
-        url: 'https://api.giphy.com/v1/gifs/search',
+        url: 'https://api.giphy.com/v1/gifs/search',//change
         dataType: 'json',
         data: {
-            api_key: '2Wmv9FWaICCS6j3Bm0KwdzFh6jiksrhg',
+            api_key: '2Wmv9FWaICCS6j3Bm0KwdzFh6jiksrhg', //change
             q: input,
-            limit: 3,
-            rating: 'PG-13'
         },
         success: resp => {
             url = resp.data["0"].embed_url
